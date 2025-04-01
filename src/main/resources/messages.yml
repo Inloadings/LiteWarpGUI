@@ -1,0 +1,3 @@
+teleport:
+  move-message: "§c§lMove! §7You Moved"
+  delay-message: "you have %delay% left!"

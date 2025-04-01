@@ -1,0 +1,4 @@
+name: LiteWarpGUI
+version: '1.0'
+main: com.inloadings.liteWarpGUI.LiteWarpGUI
+api-version: '1.21'

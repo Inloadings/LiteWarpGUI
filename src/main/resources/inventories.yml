@@ -1,0 +1,95 @@
+warp-menu:
+  title: "§e§lWarps Menu"
+  size: 27
+  items:
+    spawn:
+      slot: 13
+      material: "CRAFTING_TABLE"
+      name: "§eSpawn"
+      lore:
+        - "§7Click to teleport to Spawn."
+      teleport-successful-message: "§aTeleported to Spawn!"
+      x: -104
+      y: 106
+      z: -34.5
+      pitch: 180
+      yaw: 0
+      world: "world"
+    shop:
+      slot: 11
+      material: "GOLD_INGOT"
+      name: "§6Shop"
+      lore:
+        - "§7Click to warp to the Shop."
+      teleport-successful-message: "§aTeleported to the Shop!"
+      x: -103.5
+      y: 106
+      z: -21.5
+      pitch: 0
+      yaw: 0
+      world: "world"
+    AFK:
+      slot: 15
+      material: "AMETHYST_SHARD"
+      name: "§eAFK Island"
+      lore:
+        - "§7Click to warp to AFK Island."
+      teleport-successful-message: "§aTeleported to AFK Island!"
+      x: -52.5
+      y: 57
+      z: 177.5
+      pitch: -136.0
+      yaw: 1
+      world: "minihub"
+    FrostyIsland:
+      slot: 3
+      material: "SNOW_BLOCK"
+      name: "§bFrosty Island"
+      lore:
+        - "§7Click to warp to Frosty Island."
+      teleport-successful-message: "§aTeleported to Frosty Island!"
+      x: -227.5
+      y: 104
+      z: -164.5
+      pitch: 90
+      yaw: 0
+      world: "world"
+    BlossomIsland:
+      slot: 5
+      material: "CHERRY_SAPLING"
+      name: "§dBlossom Island"
+      lore:
+        - "§7Click to warp to Blossom Island."
+      teleport-successful-message: "§aTeleported to Blossom Island!"
+      x: 23.5
+      y: 102
+      z: -148.5
+      pitch: -90
+      yaw: 0
+      world: "world"
+    FarmerIsland:
+      slot: 21
+      material: "WHEAT"
+      name: "§aFarmer Island"
+      lore:
+        - "§7Click to warp to Farmer Island."
+      teleport-successful-message: "§aTeleported to Farmer Island!"
+      x: 1
+      y: 1
+      z: 1
+      pitch: 60.0
+      yaw: 60.0
+      world: "world"
+    Hell:
+      slot: 23
+      material: "FIRE_CHARGE"
+      name: "§cHell"
+      lore:
+        - "§7Click to warp to Hell."
+      teleport-successful-message: "§aTeleported to Hell!"
+      x: 0.5
+      y: 65
+      z: 4
+      pitch: 0
+      yaw: 0
+      world: "hell"
