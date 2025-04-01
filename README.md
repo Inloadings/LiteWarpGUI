@@ -1,0 +1,36 @@
+# 🌍 Warp Menu Plugin  
+A fully customizable **warp menu** plugin for Minecraft servers, allowing players to teleport seamlessly via an interactive GUI.  
+
+![Warp Menu Preview](https://github.com/user-attachments/assets/bdee8e96-2b08-43e9-88cd-8f8bae595b82)
+
+## 🚀 Features  
+✔️ Custom **Warp GUI** with configurable slots & materials  
+✔️ Teleport **delay & movement cancellation**  
+✔️ Personalized **messages for success & errors**  
+✔️ Fully configurable **warp locations**  
+✔️ Supports **Spigot, Paper, and Bukkit**  
+
+## 📥 Installation  
+1. **Download** the latest release from [Releases](https://github.com/LiteWarpGUI/releases).  
+2. Place the `.jar` file into your server's `/plugins/` folder.  
+3. Restart your server.  
+4. Edit `config.yml` to customize warps.  
+
+## 📜 Commands & Permissions  
+| Command | Description | Permission |  
+|---------|-------------|-------------|  
+| `/warp <name>` | Teleports to a warp | `warp.use` |  
+| `/setwarp <name>` | Sets a new warp | `warp.admin` |  
+| `/delwarp <name>` | Deletes a warp | `warp.admin` |  
+
+## 🤝 Contributing  
+1. Fork the repository.  
+2. Create a new branch (`feature-branch`).  
+3. Commit your changes.  
+4. Open a Pull Request.  
+
+## 📌 Support & Issues  
+For bug reports or feature requests, open an issue in the [Issues](https://github.com/LiteWarpGUI/issues) tab.  
+
+## 📜 License  
+This project is licensed under the [MIT License](LICENSE).  
