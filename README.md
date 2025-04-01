@@ -1,7 +1,7 @@
 # 🌍 Warp Menu Plugin  
 A fully customizable **warp menu** plugin for Minecraft servers, allowing players to teleport seamlessly via an interactive GUI.  
 
-![Warp Menu Preview](https://github.com/user-attachments/assets/bdee8e96-2b08-43e9-88cd-8f8bae595b82)
+[![Warp Menu Preview](https://img.youtube.com/vi/9HOVt3ly5Wk/0.jpg)](https://youtu.be/9HOVt3ly5Wk)
 
 ## 🚀 Features  
 ✔️ Custom **Warp GUI** with configurable slots & materials  
