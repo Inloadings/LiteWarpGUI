@@ -20,8 +20,6 @@ A fully customizable **warp menu** plugin for Minecraft servers, allowing player
 | Command | Description | Permission |  
 |---------|-------------|-------------|  
 | `/warp <name>` | Teleports to a warp | `warp.use` |  
-| `/setwarp <name>` | Sets a new warp | `warp.admin` |  
-| `/delwarp <name>` | Deletes a warp | `warp.admin` |  
 
 ## 🤝 Contributing  
 1. Fork the repository.  
