@@ -11,7 +11,7 @@ A fully customizable **warp menu** plugin for Minecraft servers, allowing player
 ✔️ Supports **Spigot, Paper, and Bukkit**  
 
 ## 📥 Installation  
-1. **Download** the latest release from [Releases](https://github.com/LiteWarpGUI/releases).  
+1. **Download** the latest release from [Releases](https://github.com/Inloadings/LiteWarpGUI/releases).  
 2. Place the `.jar` file into your server's `/plugins/` folder.  
 3. Restart your server.  
 4. Edit `config.yml` to customize warps.  
@@ -28,7 +28,7 @@ A fully customizable **warp menu** plugin for Minecraft servers, allowing player
 4. Open a Pull Request.  
 
 ## 📌 Support & Issues  
-For bug reports or feature requests, open an issue in the [Issues](https://github.com/LiteWarpGUI/issues) tab.  
+For bug reports or feature requests, open an issue in the [Issues](https://github.com/Inloadings/LiteWarpGUI/issues) tab.  
 
 ## 📜 License  
 This project is licensed under the [MIT License](LICENSE).  
