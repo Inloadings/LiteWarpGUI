@@ -9,6 +9,7 @@ import com.inloadings.liteWarpGUI.util.menu.BaseMenu;
 import com.inloadings.liteWarpGUI.util.menu.item.MenuButton;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
@@ -36,21 +37,24 @@ public class WarpMenu extends BaseMenu {
     @Override
     public void decorateInventory() {
         ConfigurationSection configSection = ConfigManager.getSection(ConfigurationFile.INVENTORIES, ConfigPath.WARP_INVENTORY);
+        if (configSection == null) return;
 
-        if (configSection != null) {
-            for (String key : configSection.getKeys(false)) {
-                ConfigurationSection itemSection = configSection.getConfigurationSection(key);
-                if (itemSection != null) {
-                    int slot = itemSection.getInt("slot");
-                    ItemStack item = createConfigurableItem(itemSection);
-                    addButton(slot, MenuButton.builder()
-                            .icon(item)
-                            .onClick(warp(itemSection))
-                            .build()
-                    );
-                    setItem(slot, item);
-                }
+        for (String key : configSection.getKeys(false)) {
+            ConfigurationSection itemSection = configSection.getConfigurationSection(key);
+            if (itemSection == null) return;
+            int slot = itemSection.getInt("slot");
+            ItemStack item;
+            if (!Bukkit.getPlayer(playerUUID).hasPermission(itemSection.getString("permission"))) {
+                item = createConfigurableItem(itemSection, Material.getMaterial(itemSection.getString("blocked-material")));
+            } else {
+                item = createConfigurableItem(itemSection);
+                addButton(slot, MenuButton.builder()
+                        .icon(item)
+                        .onClick(warp(itemSection))
+                        .build()
+                );
             }
+            setItem(slot, item);
         }
     }
 

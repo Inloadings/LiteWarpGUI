@@ -3,12 +3,14 @@ warp-menu:
   size: 27
   items:
     spawn:
+      permission: "warp.spawn"
       slot: 13
+      blocked-material: "RED_STAINED_GLASS_PANE"
       material: "CRAFTING_TABLE"
       name: "§eSpawn"
       lore:
-        - "§7Click to teleport to Spawn."
-      teleport-successful-message: "§aTeleported to Spawn!"
+        - "§7Click to teleport to spawn."
+      teleport-successful-message: "warp spawn"
       x: -104
       y: 106
       z: -34.5
@@ -16,12 +18,14 @@ warp-menu:
       yaw: 0
       world: "world"
     shop:
+      permission: "warp.shop"
       slot: 11
+      blocked-material: "RED_STAINED_GLASS_PANE"
       material: "GOLD_INGOT"
       name: "§6Shop"
       lore:
-        - "§7Click to warp to the Shop."
-      teleport-successful-message: "§aTeleported to the Shop!"
+        - "§7Click to warp to shops."
+      teleport-successful-message: "warp shop"
       x: -103.5
       y: 106
       z: -21.5
@@ -29,12 +33,14 @@ warp-menu:
       yaw: 0
       world: "world"
     AFK:
+      permission: "warp.afk"
       slot: 15
+      blocked-material: "RED_STAINED_GLASS_PANE"
       material: "AMETHYST_SHARD"
       name: "§eAFK Island"
       lore:
         - "§7Click to warp to AFK Island."
-      teleport-successful-message: "§aTeleported to AFK Island!"
+      teleport-successful-message: "warp limbo"
       x: -52.5
       y: 57
       z: 177.5
@@ -42,12 +48,14 @@ warp-menu:
       yaw: 1
       world: "minihub"
     FrostyIsland:
+      permission: "warp.frostyisland"
       slot: 3
+      blocked-material: "RED_STAINED_GLASS_PANE"
       material: "SNOW_BLOCK"
       name: "§bFrosty Island"
       lore:
         - "§7Click to warp to Frosty Island."
-      teleport-successful-message: "§aTeleported to Frosty Island!"
+      teleport-successful-message: "warp frostyisland"
       x: -227.5
       y: 104
       z: -164.5
@@ -55,12 +63,14 @@ warp-menu:
       yaw: 0
       world: "world"
     BlossomIsland:
+      permission: "warp.blossomisland"
       slot: 5
+      blocked-material: "RED_STAINED_GLASS_PANE"
       material: "CHERRY_SAPLING"
       name: "§dBlossom Island"
       lore:
-        - "§7Click to warp to Blossom Island."
-      teleport-successful-message: "§aTeleported to Blossom Island!"
+        - "§7Click to warp to blossom Island."
+      teleport-successful-message: "warp blossom"
       x: 23.5
       y: 102
       z: -148.5
@@ -68,12 +78,14 @@ warp-menu:
       yaw: 0
       world: "world"
     FarmerIsland:
+      permission: "warp.farmerisland"
       slot: 21
+      blocked-material: "RED_STAINED_GLASS_PANE"
       material: "WHEAT"
       name: "§aFarmer Island"
       lore:
         - "§7Click to warp to Farmer Island."
-      teleport-successful-message: "§aTeleported to Farmer Island!"
+      teleport-successful-message: "warp farmerisland"
       x: 1
       y: 1
       z: 1
@@ -81,12 +93,14 @@ warp-menu:
       yaw: 60.0
       world: "world"
     Hell:
+      permission: "warp.hell"
       slot: 23
+      blocked-material: "RED_STAINED_GLASS_PANE"
       material: "FIRE_CHARGE"
       name: "§cHell"
       lore:
         - "§7Click to warp to Hell."
-      teleport-successful-message: "§aTeleported to Hell!"
+      teleport-successful-message: "warp hell"
       x: 0.5
       y: 65
       z: 4

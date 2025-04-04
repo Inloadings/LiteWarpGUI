@@ -75,8 +75,13 @@ public abstract class BaseMenu implements IMenu {
     }
 
     protected ItemStack createConfigurableItem(ConfigurationSection section) {
-        System.out.println(section.getString("material"));
         Material material = Material.getMaterial(section.getString("material"));
+        String displayName = section.getString("name");
+        List<String> lore = (List<String>) section.getList("lore");
+        return new ItemBuilder(material).setDisplayName(displayName).setLore(lore).build();
+    }
+
+    protected ItemStack createConfigurableItem(ConfigurationSection section, Material material) {
         String displayName = section.getString("name");
         List<String> lore = (List<String>) section.getList("lore");
         return new ItemBuilder(material).setDisplayName(displayName).setLore(lore).build();
