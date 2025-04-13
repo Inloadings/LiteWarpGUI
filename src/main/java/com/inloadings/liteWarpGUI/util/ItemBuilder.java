@@ -94,6 +94,7 @@ public class ItemBuilder {
 
     public ItemBuilder addNamespacedKey(String key) {
         PersistentDataContainer container = itemMeta.getPersistentDataContainer();
+        //using getter for better usage
         container.set(new NamespacedKey(LiteWarpGUI.getInstance(), key), PersistentDataType.STRING, key);
         return this;
     }

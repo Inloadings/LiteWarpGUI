@@ -18,8 +18,8 @@ public class DelayedTeleport extends BukkitRunnable {
     private final String message;
     LiteWarpGUI plugin;
     Map<String, String> placeholders;
-
-    public DelayedTeleport(Player player, Location destination, int delay, String message) {
+    private final ConfigManager configManager = ConfigManager.getInstance();
+    public DelayedTeleport(Player player, Location destination, int delay, String message, LiteWarpGUI plugin) {
         this.player = player;
         Location initialLocation = player.getLocation().clone();
         IX = initialLocation.getBlockX();
@@ -28,7 +28,7 @@ public class DelayedTeleport extends BukkitRunnable {
         this.destination = destination;
         this.delay = delay;
         this.message = message;
-        this.plugin = LiteWarpGUI.getInstance();
+        this.plugin = plugin;
         placeholders = new java.util.HashMap<>(Map.of("delay", String.valueOf(delay)));
         runTaskTimer(plugin, 0, 20);
     }
@@ -37,14 +37,14 @@ public class DelayedTeleport extends BukkitRunnable {
     public void run() {
         Location location = player.getLocation().clone();
         if (location.getBlockX() != IX || location.getBlockY() != IY || location.getBlockZ() != IZ) {
-            String moveMessage = ConfigManager.getValue(ConfigurationFile.MESSAGES, ConfigPath.TELEPORT_MOVE_MESSAGE);
+            String moveMessage = configManager.getValue(ConfigurationFile.MESSAGES, ConfigPath.TELEPORT_MOVE_MESSAGE);
             player.sendMessage(moveMessage);
             cancel();
             return;
         }
         if (delay >= 1) {
             placeholders.put("delay", String.valueOf(delay));
-            String delayMessage = ConfigManager.getFormattedValue(ConfigurationFile.MESSAGES, ConfigPath.TELEPORT_DELAY_MESSAGE, placeholders);
+            String delayMessage = configManager.getFormattedValue(ConfigurationFile.MESSAGES, ConfigPath.TELEPORT_DELAY_MESSAGE, placeholders);
             player.sendMessage(delayMessage);
             delay--;
             return;

@@ -12,6 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class LiteWarpGUI extends JavaPlugin {
     @Getter
     private static LiteWarpGUI instance;
+    private CommandManager commandManager;
     @Override
     public void onEnable() {
         instance = this;
@@ -19,12 +20,12 @@ public final class LiteWarpGUI extends JavaPlugin {
         ConfigurationFile.INVENTORIES.load(this);
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new MenuListener(), this);
-        CommandManager.registerCommand(new WarpCommand("warp", this));
+        commandManager = new CommandManager(this);
+        commandManager.registerCommand(new WarpCommand("warp", this));
     }
 
     @Override
     public void onDisable() {
-        CommandManager.unregisterCommands();
-        instance = null;
+        commandManager.unregisterCommands();
     }
 }
